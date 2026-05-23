@@ -31,7 +31,7 @@ export function TaskTab({
   isRtl,
 }: TaskTabProps) {
   return (
-    <div className="space-y-5 rounded-lg border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
+    <div className="space-y-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
       <div className="flex flex-col gap-3 border-b border-slate-200 pb-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h2 className="text-xl font-black">{t.tasksTitle}</h2>
@@ -56,7 +56,7 @@ export function TaskTab({
               key={job.id}
               type="button"
               onClick={() => setSelectedJob(job)}
-              className={`flex min-h-36 flex-col rounded-lg border p-4 text-left transition ${
+              className={`flex min-h-32 flex-col rounded-lg border p-4 text-left transition ${
                 isSelected
                   ? "border-emerald-600 bg-emerald-50 shadow-sm"
                   : "border-slate-200 bg-white hover:border-slate-300 hover:bg-slate-50"

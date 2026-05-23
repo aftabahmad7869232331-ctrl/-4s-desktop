@@ -305,7 +305,7 @@ export default function App() {
         />
       </div>
 
-      <main className="mx-auto grid max-w-[1500px] grid-cols-1 gap-6 px-4 py-5 xl:grid-cols-[360px_minmax(0,1fr)]">
+      <main className="mx-auto grid max-w-[1280px] grid-cols-1 gap-5 px-4 py-5 xl:grid-cols-[320px_minmax(0,1fr)]">
         <Sidebar
           t={t}
           systemAlert={systemAlert}

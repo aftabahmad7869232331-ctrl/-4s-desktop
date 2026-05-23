@@ -32,7 +32,7 @@ export function AppNavbar({
 }: AppNavbarProps) {
   return (
     <nav className="border-b border-slate-200 bg-[#f8f4ec]/95 backdrop-blur">
-      <div className="mx-auto grid max-w-[1500px] gap-3 px-4 py-3 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
+      <div className="mx-auto grid max-w-[1280px] gap-3 px-4 py-3 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
         <div className="grid grid-cols-2 gap-2 rounded-lg border border-slate-200 bg-white p-1.5 shadow-sm sm:grid-cols-4">
           {tabs.map((tab) => {
             const Icon = tab.icon;
@@ -53,7 +53,7 @@ export function AppNavbar({
           })}
         </div>
 
-        <div className="grid grid-cols-2 gap-2 text-xs font-bold text-slate-600 sm:grid-cols-[minmax(140px,1fr)_auto_auto_auto_auto]">
+        <div className="grid grid-cols-2 gap-2 text-xs font-bold text-slate-600 sm:grid-cols-[minmax(120px,1fr)_auto_auto_auto_auto]">
           <div className="flex min-h-11 items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 shadow-sm">
             <Activity size={15} className="text-emerald-700" />
             <span className="truncate">{selectedJob ? selectedJob.id : t.chooseTask}</span>

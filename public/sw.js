@@ -1,4 +1,4 @@
-const CACHE_NAME = "4s-offline-v1";
+const CACHE_NAME = "4s-offline-v2";
 const APP_SHELL = [
   "/",
   "/index.html",

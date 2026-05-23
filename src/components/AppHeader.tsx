@@ -39,7 +39,7 @@ export function AppHeader({
 }: AppHeaderProps) {
   return (
     <header className="border-b border-slate-200 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-[1500px] flex-col gap-4 px-4 py-4 md:flex-row md:items-center md:justify-between">
+      <div className="mx-auto flex max-w-[1280px] flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-700 text-base font-black text-white">
             4S
@@ -72,7 +72,7 @@ export function AppHeader({
           <button
             type="button"
             onClick={onOpenDesk}
-            className="inline-flex items-center gap-2 rounded-lg bg-slate-900 px-3 py-2 text-sm font-black text-white hover:bg-slate-800"
+            className="inline-flex min-h-10 items-center gap-2 rounded-lg bg-slate-900 px-3 py-2 text-sm font-black text-white hover:bg-slate-800"
             title={t.wallPreview}
           >
             <MonitorUp size={16} />
@@ -81,7 +81,7 @@ export function AppHeader({
           <button
             type="button"
             onClick={onOpenFloatingController}
-            className="inline-flex items-center gap-2 rounded-lg bg-emerald-700 px-3 py-2 text-sm font-black text-white hover:bg-emerald-800"
+            className="inline-flex min-h-10 items-center gap-2 rounded-lg bg-emerald-700 px-3 py-2 text-sm font-black text-white hover:bg-emerald-800"
             title={t.pipMode}
           >
             <PanelTopOpen size={16} />
@@ -90,7 +90,7 @@ export function AppHeader({
           <button
             type="button"
             onClick={onOpenCompactController}
-            className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-black text-slate-800 hover:bg-slate-50"
+            className="inline-flex min-h-10 items-center gap-2 rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-black text-slate-800 hover:bg-slate-50"
             title={t.compactMode}
           >
             <PanelTopOpen size={16} />
