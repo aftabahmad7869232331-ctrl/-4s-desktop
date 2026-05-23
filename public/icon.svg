@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="4S icon">
+  <rect width="512" height="512" rx="96" fill="#047857"/>
+  <rect x="66" y="78" width="380" height="356" rx="48" fill="#f8f4ec"/>
+  <path d="M132 164h104v52h-48v44h42v50h-42v70h-56v-70H84v-48l48-98Zm0 52-24 44h24v-44Zm170-58h110v54H310c-14 0-22 6-22 18 0 11 8 17 22 17h35c50 0 78 24 78 66 0 46-33 73-88 73H226v-54h110c18 0 28-7 28-20 0-12-9-18-27-18h-34c-48 0-74-24-74-64 0-45 31-72 73-72Z" fill="#064e3b"/>
+</svg>

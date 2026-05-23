@@ -1,0 +1,19 @@
+{
+  "name": "4S - For Students",
+  "short_name": "4S",
+  "description": "Offline-first mobile workspace for students to practice coding, typing, and desktop-style work.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f8f4ec",
+  "theme_color": "#047857",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
