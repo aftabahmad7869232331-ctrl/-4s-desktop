@@ -163,7 +163,17 @@ export default function App() {
     controller.focus();
   };
 
+  const shouldUseInAppController = () => {
+    return window.matchMedia("(max-width: 760px), (pointer: coarse)").matches;
+  };
+
   const openCompanionController = () => {
+    if (shouldUseInAppController()) {
+      setIsCompactControllerOpen(true);
+      showToast(t.compactModeNote);
+      return;
+    }
+
     const controller = window.open("", "4s-companion-controller", "width=360,height=520,resizable=yes,scrollbars=no");
     if (!controller) {
       showToast(t.companionBlocked);
@@ -180,6 +190,12 @@ export default function App() {
   };
 
   const openFloatingController = async () => {
+    if (shouldUseInAppController()) {
+      setIsCompactControllerOpen(true);
+      showToast(t.compactModeNote);
+      return;
+    }
+
     const pipApi = (window as typeof window & {
       documentPictureInPicture?: {
         requestWindow: (options?: { width?: number; height?: number }) => Promise<Window>;
